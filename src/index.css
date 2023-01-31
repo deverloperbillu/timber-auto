@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*, a, img, ul, ol{ font-family: 'Raleway', sans-serif; list-style:none; padding:0px; margin:0px; outline:none; border:none; text-decoration:none; }
+h2, h3, h4, h5, h6, .entry-header h1 {font-family: 'Oswald', sans-serif;}
+a {text-decoration:none !important; }
+a:hover{ color: #272262 !important; }
