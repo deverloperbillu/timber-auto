@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from '../assets/mainlogo.png'
+import {FaPhone, FaBars} from 'react-icons/fa'
+
 
 const Header = () => {
   return (
@@ -21,13 +23,13 @@ const Header = () => {
 					<li><a href="/">Contact Us</a></li>
 				</ul>
 				<div class="phone">
-					<a href="tel:123456789"><i class="fa fa-phone"></i></a>
+					<a href="tel:123456789"><FaPhone /></a>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-2">
 			<div class="side-menu">
-				<a href="/" class="menu-btn"><i class="fa fa-bars"></i></a>
+				<a href="/" class="menu-btn"><FaBars /></a>
 			</div>
 		</div>
 	</div>

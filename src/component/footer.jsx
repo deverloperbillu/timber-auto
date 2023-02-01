@@ -1,5 +1,6 @@
 import React from 'react'
 import chat from '../assets/chat.png'
+import {FaInstagram, FaFacebook, FaYoutube, FaTwitter} from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -73,11 +74,10 @@ const Footer = () => {
 					
 					<div class="social-icon">
 						<ul>
-							<li><a href="/"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="/"><i class="fa fa-youtube-play"></i></a></li>
-							<li><a href="/"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="/"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="/"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="/"><FaFacebook/></a></li>
+							<li><a href="/"><FaYoutube /></a></li>
+							<li><a href="/"><FaTwitter /></a></li>
+							<li><a href="/"><FaInstagram /></a></li>
 						</ul>
 						<div class="chat">
 							<a href="/"><img src={chat} alt="Chat"/></a>
