@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/mainlogo.png'
 import {FaPhone, FaBars} from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -16,11 +17,11 @@ const Header = () => {
 		<div class="col-md-8">
 			<div class="main-menu">
 				<ul>
-					<li class="active"><a href="/">Home</a></li>
-					<li><a href="/">About Us</a></li>
-					<li><a href="/">Buy a Vehicle</a></li>
-					<li><a href="/">FAQs</a></li>
-					<li><a href="/">Contact Us</a></li>
+					<li class="active"><Link to="/">Home</Link></li>
+					<li><Link to="/about">About</Link></li>
+					<li><Link to="/faq">FAQs</Link></li>
+					<li><Link to="/contact">Contact</Link></li>
+					<li><a href="/">Buy a Vehicle</a></li>					
 				</ul>
 				<div class="phone">
 					<a href="tel:123456789"><FaPhone /></a>

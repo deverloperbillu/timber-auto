@@ -1,3 +1,10 @@
+/*== GENERAL CSS ==*/
+::selection{background:#272262; color:#fff; text-shadow:none;}
+::-webkit-scrollbar {width:10px; height:10px;}
+::-webkit-scrollbar-button:start:decrement,	::-webkit-scrollbar-button:end:increment  { display:none; }
+::-webkit-scrollbar-track-piece  {background-color:#ecedf1; -webkit-border-radius:0px; border-left:1px solid #888;}			
+::-webkit-scrollbar-thumb:vertical {-webkit-border-radius:0px;	background:#000; }
+
 @viewport{user-zoom: fixed;}
    .preloader {
 	height: 100%;
@@ -141,6 +148,52 @@
 
 .main-menu ul li.active a, .main-menu ul li a:hover {color: #919c97;}
 .footer-heading ul {padding: 0;}
+
+.vission_item h3 {position: relative; padding-left: 20px; font-size: 22px;}
+.vission_item h3:before {content: ""; position: absolute; display: block; width: 12px; height: 12px; border-radius: 8px; background-color: #00D231; left: 0; top: 5px;}
+.vission_item p {font-size: 14px; padding-left: 20px; line-height: 190%; font-weight: 300;}
+
+.inner-page {padding: 50px 0;}
+.our_vission .custom-heading {margin-bottom: 40px;}
+
+.counter {position: relative; text-align: center;}
+.counter .counter-inner {position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center;}
+.counter figure img {width: 100%; max-height: 260px; object-fit: cover;}
+.counter figure {margin: 0; position: relative;}
+.counter figure:before {content: ""; position: absolute; display: block; width: 100%; height: 100%; background: #069851; opacity: 0.8;}
+.counter .counter-inner .counter-box span {position: relative; font-size: 40px; color: #fff;}
+.counter .counter-inner .counter-box p {font-size: 16px; color: #fff; font-weight: 300;}
+.counter .counter-inner .counter-box {background-color: rgba(255,255,255,0.05); color: #fff; border-radius: 3px; text-align: center; padding: 30px;}
+.counter .counter-inner .counter-box span:after {content: "\2b"; margin-left: 10px;}
+
+.car-box {border: 1px solid #e9eff2; text-align: center; border-radius: 3px; padding: 20px 30px; cursor: pointer;}
+.car-box figure {margin: 0;}
+.car-box figure img {min-height: 110px; object-fit: contain; margin: 0px auto; max-width: 190px; width: 100% !important; filter: grayscale(100%); transition: linear 0.3s;}
+.car-box figure img:hover {filter: grayscale(0); transition: linear 0.3s;}
+.our_partners {padding: 50px 0;}
+
+.inner-banner {position: relative; text-align: center; padding: 200px 0 100px 0; background: #000 url(assets/innerbanner.jpg) center no-repeat; background-size: cover; background-attachment: fixed;}
+.inner-banner h3 {font-size: 36px; font-weight: 600; color: #FFFFFF; margin-bottom: 5px;}
+.inner-banner ul li {display: inline-block;}
+.inner-banner ul li a, .inner-banner ul li span {color: #a5a5a5; font-size: 18px;}
+
+.inner-banner ul li span.sap {margin-left: 10px; margin-right: 10px; color: #a5a5a5;}
+.inner-banner ul li span {color: #fff;}
+.inner-banner ul {margin: 0;}
+
+.faq-sec {padding: 50px 0;}
+.faq-sec .custom-heading h2 {font-size: 30px; font-weight: 600;}
+.acrd {max-width: 600px; margin: 2rem auto;}
+.acrd .item {background: #069851; margin-bottom: 5px; padding: 10px 20px;}
+.acrd .item .title {color: #fff; display: flex; justify-content: space-between; align-items: center; cursor: pointer;}
+.acrd .item .content {color: #fff; max-height: 0; overflow: hidden; transition: linear 0.3s;}
+.acrd .item .content.show {height: auto; max-height: 9999px; transition: linear 0.3s;}
+
+.map iframe {width: 100%; height: 400px; margin-bottom: 50px; filter: grayscale(1000%);}
+.contact-form input, .contact-form textarea {width: 100%; background: white; padding: 10px 20px; box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 20%) !important; height: 55px; border-radius: 0.25rem; margin-bottom: 20px;}
+.contact-form textarea {height: 200px !important;}
+.contact-form button.custom-btn {background: #069850; padding: 10px 20px; color: #fff;}
+.btn-bs {display: block; text-align: right;}
 
 @media (min-width: 1024px) and (max-width: 1440px){
 	.service-sec .single-item {padding: 0 10px;}
